@@ -1,0 +1,43 @@
+body {
+    background: black;
+}
+
+#blink1 {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    0% {
+      background: rgb(43, 8, 168);
+    }
+    50% {
+        background: rgb(219, 16, 16);
+    }
+    100% {
+        background: rgb(11, 155, 71);
+    }
+  }
+  @-webkit-keyframes blink-animation {
+
+  }
+
+  #blink2 {
+    animation: blink-animation .5s steps(5, start) infinite;
+    -webkit-animation: blink-animation .5s steps(5, start) infinite;
+    animation-delay: .3s;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+
+  #bulb-1 {
+    animation: blinking 1s infinite;
+  }
+  #bulb-2 {
+    animation: blinking 1s infinite;
+    
+  }
+  
