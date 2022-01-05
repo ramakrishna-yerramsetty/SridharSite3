@@ -2,42 +2,102 @@ body {
     background: black;
 }
 
+.right {
+    float: right;
+}
+
 #blink1 {
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
   }
   @keyframes blink-animation {
     0% {
-      background: rgb(43, 8, 168);
+      opacity: 0;
     }
-    50% {
-        background: rgb(219, 16, 16);
-    }
+   
     100% {
-        background: rgb(11, 155, 71);
+        opacity: 1;
     }
   }
   @-webkit-keyframes blink-animation {
 
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
   }
 
   #blink2 {
-    animation: blink-animation .5s steps(5, start) infinite;
-    -webkit-animation: blink-animation .5s steps(5, start) infinite;
-    animation-delay: .3s;
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
+    animation-delay: 0.67s;
   }
-  @keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
+
+  #blink3 {
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
+    animation-delay: 0.37s;
+  }
+
+  #blink4 {
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
+    animation-delay: 0.79s;
+  }
+  #blink5 {
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
+    animation-delay: 0.59s;
+  }
+  #blink6 {
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
+    animation-delay: .29s ;
+  }
+
+  #blink7 {
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
+    animation-delay: 0.47;
+  }
+
+  .bulb {
+      height: 50px;
+      width: 50px;
+  }
+
+  .menuText {
+    color:white ;
   }
   
 
-  #bulb-1 {
-    animation: blinking 1s infinite;
+
+  div.slide-item-left {
+    width:50%;
+    overflow:hidden;
   }
-  #bulb-2 {
-    animation: blinking 1s infinite;
-    
+  div.slide-item-left {
+    animation: slide-left 10s;
+    margin-top:0%;
+    animation-iteration-count: infinite;
   }
   
+  @keyframes slide-left {
+    from {
+      margin-left: 50%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+
+  .slide-item-left {
+    
+  }
+  .slide-item-left img {
+    position: relative;
+    transform: translateY(50%);
+  }
